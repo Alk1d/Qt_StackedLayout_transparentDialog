@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InformationDialog</class>
+ <widget class="QDialog" name="InformationDialog">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>300</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>300</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>InfoPanel</string>
+  </property>
+  <property name="windowOpacity">
+   <double>0.500000000000000</double>
+  </property>
+  <property name="modal">
+   <bool>false</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="2">
+      <widget class="QGroupBox" name="ParametresgroupBox">
+       <property name="title">
+        <string>Information</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <layout class="QVBoxLayout" name="InfoVerticalLayout">
+          <item>
+           <widget class="QLabel" name="BirthdateLabel">
+            <property name="text">
+             <string>Birth date</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="BirthdateLineEdit">
+            <property name="inputMask">
+             <string>00.00.0000</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="HeightLabel">
+            <property name="text">
+             <string>Height</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="HeightLineEdit"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="WeightLlabel">
+            <property name="text">
+             <string>Weight</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="WeightLlineEdit"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QGroupBox" name="FullNamegroupBox">
+       <property name="title">
+        <string>Full name</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <layout class="QVBoxLayout" name="NameVerticalLayout">
+          <item>
+           <widget class="QLabel" name="NameLabel">
+            <property name="text">
+             <string>Name</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="NameLineEdit"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="SurnameLabel">
+            <property name="text">
+             <string>Surname</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="SurnameLineEdit"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="LastnameLabel">
+            <property name="text">
+             <string>Last name</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="LastnameLineEdit"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="3" column="0">
+    <widget class="QPushButton" name="OkpushButton">
+     <property name="text">
+      <string>OK</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QPushButton" name="CancelpushButton">
+     <property name="text">
+      <string>Cancel</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>OkpushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>InformationDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>199</x>
+     <y>248</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CancelpushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>InformationDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>199</x>
+     <y>278</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

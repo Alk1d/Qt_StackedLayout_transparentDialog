@@ -1,0 +1,19 @@
+{"Cardfile":[
+    {
+        "birthdate": "..",
+        "height": "4",
+        "lastname": "3",
+        "name": "1",
+        "surname": "2",
+        "weight": "5"
+    },
+    {
+        "birthdate": "22.22.2222",
+        "height": "2",
+        "lastname": "2",
+        "name": "2",
+        "surname": "2",
+        "weight": "2"
+    }
+]
+}
